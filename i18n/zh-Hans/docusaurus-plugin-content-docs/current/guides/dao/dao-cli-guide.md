@@ -28,13 +28,13 @@ For more information about Chia DAOs, see:
 - [DAO RPC Reference](/dao-rpc)
 - [DAO1 CHIP](https://github.com/Chia-Network/chips/pull/93)
 
----
+***
 
 ## About
 
 Chia Decentralized Autonomous Organizations (DAOs) are organizations where no central entity is in control. DAOs are funded through their treasuries. Membership is determined by ownership of DAO CATs, which function as ownership shares. Any member can create a proposal, for example to spend some of the DAO's treasury. Members vote on proposals with their ownership shares.
 
----
+***
 
 ## Guide
 
@@ -91,6 +91,12 @@ Coin ID: 0x722a89074b24a5742aa36667e2864b0c7151515a4796b062601de02e67a4bb4c
 Coin ID: 0xde53700207e23c74088bd6feaadf39f36248729880ffe112b9420fa27c861d5c
         Address: txch18k0tt72s6etkdc5yn03ccq90f23r6kleauu6nck7r3jddhwq638qhkxf2w Amount: 74.098368735695  (74098368735695 mojo), Confirmed in block: 496080
 ```
+
+:::
+
+:::note
+
+This guide will use a CLI command to create a DAO. If preferred, you can also create a DAO with the [create_new_wallet](/wallet-rpc/#create_new_wallet) wallet RPC (see Example 4).
 
 :::
 
@@ -273,6 +279,12 @@ XCH: 5.0
 The DAO now has 5 TXCH in its treasury. But there isn't much point in creating a DAO with only one member. The next step will be to get others to join.
 
 ### Join a DAO
+
+:::note
+
+This guide will use a CLI command to join an existing DAO. If preferred, you can also join a DAO with the [create_new_wallet](/wallet-rpc/#create_new_wallet) wallet RPC (see Example 5).
+
+:::
 
 For this example, we will begin with a wallet that contains 3 TXCH. This will become the wallet for **DAO participant 1**:
 

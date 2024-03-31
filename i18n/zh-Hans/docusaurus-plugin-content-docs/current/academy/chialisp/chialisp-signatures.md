@@ -12,7 +12,7 @@ In this lesson, we go over how to secure coins using signatures.
 - **Signing and Signatures**: Understand the uses and benefits of signatures.
 - **Chialisp Library files**: Learn about helpful Chialisp libraries to simplify development.
 
----
+***
 
 ## Content
 
@@ -20,7 +20,7 @@ In this lesson, we go over how to secure coins using signatures.
 <iframe width="100%" height="504" src="https://www.youtube.com/embed/zD1rhLKgc9Y" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 </div>
 
----
+***
 
 ## Script
 
@@ -77,7 +77,7 @@ To craft the solution, we'll run this command where `51` is the `CREATE_COIN` co
 Finally, the aggregated signature. Remember that the message we are signing is the tree hash of our conditions; or our solution. So first, let's generate that hash. Next we'll also need the coin ID and the genesis challenge. The genesis challenge is a standard value for each network.
 
 05:20\
-You can find the appropriate challenge by entering `chia show -s` and searching for 'genesis challenge'. Since we're on testnet10, our challenge is this value starting with 'AE'. For the coin ID, we actually need the parent ID, the puzzle hash, and the amount which can all be found in the coin record we copied earlier.
+You can find the appropriate challenge by entering `chia show -s` and searching for 'genesis challenge'. For the coin ID, we actually need the parent ID, the puzzle hash, and the amount which can all be found in the coin record we copied earlier.
 
 05:40\
 To get the coin ID, we'll run `cdv inspect -id coins` enter the parent ID, the puzzle hash, and the amount. (`cdv inspect -id coins --parent-id [PARENT_ID] --puzzle-hash [PUZZLE_HASH] --amount [AMOUNT]`) The `AGG_SIG_ME` condition expects the concatenation of the conditions treehash, coin ID, and genesis challenge, so run
@@ -93,14 +93,14 @@ So we've talked in this video about how signatures work, their importance, and h
 
 </details>
 
----
+***
 
 ## Common gotchas
 
 - **0x Prefixes:** It's important to keep track of how we are using different values and understand how Chialisp is going to handle them. A common gotcha is forgetting to append `0x` to a value, or in some cases removing it to tell the puzzle how to properly handle the parameter.
 - **"Saving for Later":** At several points in this lesson, we generate results that we'll need to use elsewhere, sometimes many times. These results also do not have obivious indicators as to what they are. It's helpful to have a document to temporarily store these results for later use.
 
----
+***
 
 ## Knowledge check
 
@@ -136,7 +136,7 @@ The `AGG_SIG_ME` condition expects a concatenated value of the following:
 
 </details>
 
----
+***
 
 ## Additional resources
 
@@ -173,4 +173,4 @@ For information on using these plugins please refer to the [academy overview](/a
 - Chialisp [detailed documentation](https://chialisp.com/): detailed information on all aspects of chialisp.
 - Support [in discord](https://discord.gg/chia): for further support join our discord server and ask in the #chialisp or #support channels.
 
----
+***
